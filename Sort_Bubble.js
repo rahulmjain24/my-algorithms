@@ -17,6 +17,7 @@ function bubbleSort(arr) {
                 j = 0
                 i--;  
             }
+
             if(i>j){
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j + 1);
@@ -25,14 +26,13 @@ function bubbleSort(arr) {
                 }
                 j++
                 return sortRecursion(arr)
-            }            
+            }   
+                     
             j++;
             return sortRecursion(arr);
-        }
-        return arr;
+        }        
     }
-    return sortRecursion(arr)
+    sortRecursion(arr)
 }
 
-const sortedarr = bubbleSort(newArr)
-console.log(sortedarr)
+console.log(newArr)
