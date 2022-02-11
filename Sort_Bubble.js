@@ -1,5 +1,4 @@
-//const newArr = [34, 21, 54,14,65,23];
-const newArr = [8, 1, 2, 3, 4, 5];
+const newArr = [34, 21, 54,14,65,23];
 
 function bubbleSort(arr) {
     let i = arr.length - 1;
