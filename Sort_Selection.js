@@ -1,4 +1,4 @@
-const newArr = [19, 10, 8, 17, 9];
+let newArr = [19, 10, 8, 17, 9,53,12,99];
 
 function selectionSort(arr) {
     let i = 0;

@@ -1,4 +1,4 @@
-const newArr = [34, 21, 54,14,65,23];
+let newArr = [34, 21, 54, 14, 65, 23];
 
 function bubbleSort(arr) {
     let i = arr.length - 1;
@@ -13,23 +13,19 @@ function bubbleSort(arr) {
 
     function sortRecursion(arr) {
         if (i > 0) {
+            console.log(arr, j, i);
             if (i > j) {
                 if (arr[j] > arr[j + 1]) {
                     swap(arr, j, j + 1);
-                    j++;
                     noSwap = false;
-                    return sortRecursion(arr);
                 }
                 j++
                 return sortRecursion(arr)
             }
-            if (i === j) {
-                if (noSwap) return arr;
-                j = 0
-                i--;
-                noSwap = true;
-            }
-            j++;
+            if (noSwap) return arr;
+            j = 0
+            i--;
+            noSwap = true;
             return sortRecursion(arr);
         }
         return arr
@@ -37,6 +33,6 @@ function bubbleSort(arr) {
     return sortRecursion(arr)
 }
 
-bubbleSort(newArr)
-console.log(newArr)
+const sortedArr = bubbleSort(newArr)
+console.log(sortedArr)
 
